@@ -34,5 +34,5 @@ A feature-rich, React-based code editor with live preview functionality, built a
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/playcode-clone.git
+   git clone [https://github.com/niksam11/playcode-clone.git]
    cd playcode-clone
