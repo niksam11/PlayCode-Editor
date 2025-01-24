@@ -1,0 +1,268 @@
+:root {
+  --background: #1e1e1e;
+  --foreground: #d4d4d4;
+  --border: #2d2d2d;
+  --active: #37373d;
+  --hover: #2a2d2e;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.app-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  height: 48px;
+  background-color: var(--background);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.nav-right {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--foreground);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-button.primary {
+  background-color: #4caf50;
+  color: white;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.toolbar {
+  height: 40px;
+  background-color: var(--background);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.tool-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background: transparent;
+  border: none;
+  color: var(--foreground);
+  cursor: pointer;
+}
+
+.split-horizontal {
+  display: flex;
+  flex: 1;
+}
+
+.split-vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.gutter {
+  background-color: var(--border);
+}
+
+.gutter-horizontal {
+  cursor: col-resize;
+}
+
+.gutter-vertical {
+  cursor: row-resize;
+}
+
+.file-explorer {
+  background-color: var(--background);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.explorer-section {
+  padding: 8px 0;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  font-size: 11px;
+  color: #808080;
+}
+
+.add-button {
+  background: transparent;
+  border: none;
+  color: var(--foreground);
+  cursor: pointer;
+}
+
+.file-tree {
+  padding: 8px 0;
+}
+
+.folder {
+  padding-left: 16px;
+}
+
+.folder-header {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 0;
+  cursor: pointer;
+}
+
+.folder-content {
+  padding-left: 16px;
+}
+
+.file {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 0;
+  cursor: pointer;
+}
+
+.package-list {
+  padding: 8px 16px;
+}
+
+.package {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 0;
+}
+
+.tab-bar {
+  height: 35px;
+  background-color: var(--background);
+  display: flex;
+  border-bottom: 1px solid var(--border);
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
+  border-right: 1px solid var(--border);
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: var(--active);
+}
+
+.close-tab {
+  background: transparent;
+  border: none;
+  color: var(--foreground);
+  cursor: pointer;
+  opacity: 0;
+}
+
+.tab:hover .close-tab {
+  opacity: 1;
+}
+
+.editor-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.console,
+.web-view {
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.console-header,
+.web-view-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.close-button {
+  background: transparent;
+  border: none;
+  color: var(--foreground);
+  cursor: pointer;
+}
+
+.console-content {
+  flex: 1;
+  padding: 8px;
+  font-family: "Consolas", "Courier New", monospace;
+}
+
+.console-line {
+  display: flex;
+  gap: 8px;
+  padding: 2px 0;
+}
+
+.console-arrow {
+  color: #4caf50;
+}
+
+.web-view-content {
+  flex: 1;
+  border: none;
+  background: white;
+}
+
